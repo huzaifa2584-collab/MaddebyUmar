@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="MadeByUmar is a creative studio for 3D product visualization, product animation and immersive digital experiences.">
+
+	<title>MadeByUmar — 3D Creative Studio</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+
+	<div class="background-glow"></div>
+
+	<header class="navbar">
+		<a class="logo" href="#home">madeby<span>umar</span><i>.</i></a>
+
+		<nav id="navLinks">
+			<a href="#home">Home</a>
+			<a href="#work">Our Work</a>
+			<a href="#services">Services</a>
+			<a href="#contact">Contact</a>
+		</nav>
+
+		<a class="nav-cta" href="#contact">Let's Talk <span>↗</span></a>
+	</header>
+
+	<main>
+		<section class="hero section-wrap" id="home">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="live-dot"></span> INDEPENDENT 3D CREATIVE STUDIO</p>
+
+				<h1>WE MAKE<br>
+					PRODUCTS LOOK<br>
+					<span class="gradient-text">UNREAL.</span>
+				</h1>
+
+				<p class="hero-description">
+					We transform everyday products into extraordinary
+					visual experiences through 3D design, animation
+					and creative storytelling.
+				</p>
+
+				<div class="hero-actions">
+					<a href="#work" class="button button-primary">
+						Explore Our Work <span>↗</span>
+					</a>
+					<a href="#services" class="button button-ghost">
+						What We Do
+					</a>
+				</div>
+
+				<div class="hero-note">
+					<span class="note-line"></span>
+					BUILT FOR BRANDS WITH BIG IDEAS
+				</div>
+			</div>
+
+			<div class="hero-visual">
+				<div class="visual-grid"></div>
+				<div class="ring ring-one"></div>
+				<div class="ring ring-two"></div>
+				<div class="visual-glow"></div>
+
+				<div class="hero-product-card" id="heroProductCard">
+					<div class="product-topline">
+						<span>FEATURED CONCEPT</span>
+						<span class="status"><i></i> 3D VISUAL</span>
+					</div>
+
+					<div class="hero-product-stage" id="heroProductStage">
+						<img
+							id="heroProduct"
+							src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1000&q=85"
+							alt="Luxury perfume product concept"
+						>
+					</div>
+
+					<div class="product-caption">
+						<div>
+							<p class="caption-label">PROJECT / 001</p>
+							<h2 id="heroProductName">NOIR — SCENT</h2>
+							<p id="heroProductType">Luxury fragrance concept</p>
+						</div>
+						<span class="caption-arrow">↗</span>
+					</div>
+				</div>
+
+				<div class="floating-tag tag-top">DESIGN <span>+</span> TECHNOLOGY</div>
+				<div class="floating-tag tag-bottom">MAKE IT MEMORABLE.</div>
+			</div>
+		</section>
+
+		<section class="marquee" aria-label="Our creative services">
+			<div class="marquee-track">
+				<span>3D PRODUCT DESIGN</span><i>✳</i>
+				<span>PRODUCT ANIMATION</span><i>✳</i>
+				<span>CREATIVE DIRECTION</span><i>✳</i>
+				<span>DIGITAL EXPERIENCES</span><i>✳</i>
+				<span>3D PRODUCT DESIGN</span><i>✳</i>
+				<span>PRODUCT ANIMATION</span><i>✳</i>
+				<span>CREATIVE DIRECTION</span><i>✳</i>
+				<span>DIGITAL EXPERIENCES</span><i>✳</i>
+			</div>
+		</section>
+
+		<section class="work-section section-wrap" id="work">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">SELECTED CONCEPTS / 2026</p>
+					<h2>Ideas into <span class="gradient-text">experiences.</span></h2>
+				</div>
+				<p class="section-description">
+					Explore product concepts across different industries.
+					Select any project to view it in our interactive showcase.
+				</p>
+			</div>
+
+			<div class="filters" id="categoryFilters">
+				<button class="filter-btn active" data-filter="all">All Projects</button>
+				<button class="filter-btn" data-filter="tech">Technology</button>
+				<button class="filter-btn" data-filter="beauty">Beauty</button>
+				<button class="filter-btn" data-filter="fashion">Fashion</button>
+				<button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+			</div>
+
+			<div class="project-grid" id="projectGrid">
+
+				<article class="project-card"
+					data-category="beauty"
+					data-name="NOIR — SCENT"
+					data-type="Luxury fragrance concept"
+					data-image="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1000&q=85"
+					tabindex="0">
+					<div class="project-image image-purple">
+						<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=85" alt="Luxury fragrance bottle" loading="lazy">
+						<span class="project-number">01 / BEAUTY</span>
+						<button class="view-project" type="button">View Experience ↗</button>
+					</div>
+					<div class="project-info">
+						<div><h3>Noir — Scent</h3><p>Product Visualization</p></div>
+						<span class="project-arrow">↗</span>
+					</div>
+				</article>
+
+				<article class="project-card"
+					data-category="tech"
+					data-name="PULSE — AUDIO"
+					data-type="Premium audio concept"
+					data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85"
+					tabindex="0">
+					<div class="project-image image-blue">
+						<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85" alt="Premium headphones product concept" loading="lazy">
+						<span class="project-number">02 / TECHNOLOGY</span>
+						<button class="view-project" type="button">View Experience ↗</button>
+					</div>
+					<div class="project-info">
+						<div><h3>Pulse — Audio</h3><p>Product Campaign</p></div>
+						<span class="project-arrow">↗</span>
+					</div>
+				</article>
+
+				<article class="project-card"
+					data-category="fashion"
+					data-name="MOTION — WEAR"
+					data-type="Performance footwear concept"
+					data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85"
+					tabindex="0">
+					<div class="project-image image-red">
+						<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85" alt="Athletic sneaker concept" loading="lazy">
+						<span class="project-number">03 / FASHION</span>
+						<button class="view-project" type="button">View Experience ↗</button>
+					</div>
+					<div class="project-info">
+						<div><h3>Motion — Wear</h3><p>3D Product Concept</p></div>
+						<span class="project-arrow">↗</span>
+					</div>
+				</article>
+
+				<article class="project-card"
+					data-category="lifestyle"
+					data-name="FORM — TIME"
+					data-type="Modern watch concept"
+					data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=85"
+					tabindex="0">
+					<div class="project-image image-green">
+						<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85" alt="Minimal wristwatch product" loading="lazy">
+						<span class="project-number">04 / LIFESTYLE</span>
+						<button class="view-project" type="button">View Experience ↗</button>
+					</div>
+					<div class="project-info">
+						<div><h3>Form — Time</h3><p>Product Visualization</p></div>
+						<span class="project-arrow">↗</span>
+					</div>
+				</article>
+
+				<article class="project-card"
+					data-category="beauty"
+					data-name="PURE — SKIN"
+					data-type="Skincare packaging concept"
+					data-image="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85"
+					tabindex="0">
+					<div class="project-image image-pink">
+						<img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85" alt="Skincare and beauty products" loading="lazy">
+						<span class="project-number">05 / BEAUTY</span>
+						<button class="view-project" type="button">View Experience ↗</button>
+					</div>
+					<div class="project-info">
+						<div><h3>Pure — Skin</h3><p>Packaging & Art Direction</p></div>
+						<span class="project-arrow">↗</span>
+					</div>
+				</article>
+
+				<article class="project-card"
+					data-category="tech"
+					data-name="SONIC — TECH"
+					data-type="Consumer technology concept"
+					data-image="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1000&q=85"
+					tabindex="0">
+					<div class="project-image image-cyan">
+						<img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=85" alt="Wireless audio technology" loading="lazy">
+						<span class="project-number">06 / TECHNOLOGY</span>
+						<button class="view-project" type="button">View Experience ↗</button>
+					</div>
+					<div class="project-info">
+						<div><h3>Sonic — Tech</h3><p>Digital Product Concept</p></div>
+						<span class="project-arrow">↗</span>
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<section class="services-section" id="services">
+			<div class="section-wrap">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">WHAT WE CREATE</p>
+						<h2>More than just <span class="gradient-text">visuals.</span></h2>
+					</div>
+					<p class="section-description">
+						From a single product render to a complete visual campaign,
+						we help brands present their products with impact.
+					</p>
+				</div>
+
+				<div class="services-grid">
+					<article class="service-card">
+						<span class="service-index">01</span>
+						<div class="service-icon">◇</div>
+						<h3>3D Product Visualization</h3>
+						<p>High-quality product imagery for websites, campaigns and launches.</p>
+						<span class="service-footer">RENDER / DETAIL / LIGHTING</span>
+					</article>
+
+					<article class="service-card">
+						<span class="service-index">02</span>
+						<div class="service-icon">↗</div>
+						<h3>Product Animation</h3>
+						<p>Dynamic motion that brings product details, materials and features to life.</p>
+						<span class="service-footer">MOTION / STORY / IMPACT</span>
+					</article>
+
+					<article class="service-card">
+						<span class="service-index">03</span>
+						<div class="service-icon">◎</div>
+						<h3>Interactive Experiences</h3>
+						<p>Engaging web experiences that invite customers to explore products.</p>
+						<span class="service-footer">WEB / INTERACTION / DESIGN</span>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section section-wrap" id="contact">
+			<div class="contact-copy">
+				<p class="eyebrow">HAVE A PRODUCT IN MIND?</p>
+				<h2>LET'S MAKE<br>SOMETHING <span class="gradient-text">ICONIC.</span></h2>
+				<p>Tell us about your product and the experience you want to create.</p>
+				<div class="contact-decoration">MBU<span>.</span></div>
+			</div>
+
+			<form class="contact-form" id="contactForm">
+				<label for="clientName">Your name</label>
+				<input id="clientName" name="name" type="text" placeholder="Enter your name" required>
+
+				<label for="clientEmail">Email address</label>
+				<input id="clientEmail" name="email" type="email" placeholder="you@example.com" required>
+
+				<label for="projectType">What do you need?</label>
+				<select id="projectType" name="project" required>
+					<option value="">Select a service</option>
+					<option>3D Product Visualization</option>
+					<option>Product Animation</option>
+					<option>Interactive Website</option>
+					<option>Complete Creative Campaign</option>
+					<option>Something Else</option>
+				</select>
+
+				<label for="projectMessage">Tell us about your project</label>
+				<textarea id="projectMessage" name="message" rows="4" placeholder="Your product, idea, timeline..." required></textarea>
+
+				<button class="button button-primary submit-button" type="submit">
+					Prepare Project Enquiry <span>↗</span>
+				</button>
+
+				<p class="form-message" id="formMessage" aria-live="polite"></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<a class="logo" href="#home">madeby<span>umar</span><i>.</i></a>
+		<p>INDEPENDENT CREATIVE STUDIO · DESIGNING WHAT'S NEXT</p>
+		<a href="#home" class="back-top">BACK TO TOP ↑</a>
+	</footer>
+
+</body>
+</html>
